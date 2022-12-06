@@ -1,0 +1,50 @@
+<!doctype html>
+
+<html>
+  <head>
+    <link rel="stylesheet" href="lib/style.css">
+  </head>
+
+  <body>
+ 
+ <h2>Javascript Form Validation using regex</h2>
+    <div class="container">
+      <form method="get" action="" id="form">
+        <fieldset>
+          <legend>Create Account</legend>
+
+          <article class="form-control">
+            <label for="name">Username :</label>
+            <input id="name" type="text" name="submit" placeholder="enter your name">
+            <p class="sms" id="sms-1"></p>
+          </article>
+
+          <article class="form-control">
+            <label for="email">Email :</label>
+            <input id="email" type="email" name="submit" placeholder="enter active email">
+             <p class="sms" id="sms-2"></p>
+          </article>
+
+          <article class="form-control">
+            <label for="phone">Phonenumber :</label>
+            <input id="phone" maxlength="13" type="text" name="submit" placeholder="enter your phone ( 0000 000-0000 )">
+             <p class="sms" id="sms-3"></p>
+          </article>
+
+          <article class="form-control ">
+            <label for="pass">Password :</label>
+            <div class="cutsom">
+                <input id="pass" maxlength="12" type="password" name="submit" placeholder="enter correct password">
+            <span id="show" data-text="show">Show</span>
+            </div>
+             <p class="sms" id="sms-4"></p>
+          </article>
+          <input type="submit" id="form-submit" value="Register">
+        </fieldset>
+      </form>
+    </div>
+
+
+      <script src="lib/script.js"></script>
+  </body>
+</html>

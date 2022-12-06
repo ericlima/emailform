@@ -1,0 +1,122 @@
+/* Add your styles here */
+*{
+	padding: 0;
+	margin: 0;
+	outline: none;
+	box-sizing: border-box;
+	border: none;
+  }
+  :root{
+	--main-color:#531daa;
+	--label-color:rgba(12, 10, 10, 0.651);
+	--black-color:black;
+	--btn-bg:rgba(187, 187, 187, 0.199);
+	--white-color:white;
+	--success-color:#27D86C;
+	--error-color:#EE1140;
+	--body-bg:#dfe7e7e3;
+	--box-shade:0 15px 10px rgba(17, 5, 5, 0.425);
+	--tranitions:all 500ms ease;
+  }
+  body{
+	  font-family: sans-serif;
+	  width: 100%;
+	  height: 100vh;
+	  background-color: var(--body-bg);
+  }
+  h2{
+	text-align: center;
+	margin-top: 2rem ;
+	color: var(--main-color);
+	font-weight: bold;
+  }
+  
+  
+  .container{
+	padding: 2rem;
+	margin: 1rem auto;
+	width: 50%;
+  }
+  legend{
+	color: var(--main-color);
+	padding: 1rem 0;
+	font-size: 1.2rem;
+	font-weight: bold;
+  }
+  form{
+	box-shadow: var(--box-shade);
+	padding: 1rem;
+	background-color: var(--white-color);
+	position: relative;
+	// max-height: 70vh;
+  }
+  .form-control{
+	display: flex;
+	flex-direction: column;
+  }
+  .form-control input{
+	width: 100%;
+	margin: 1rem 0;
+	padding: 1rem 0.5rem;
+	border-radius: 5px;
+	font-size: 1rem;
+	background-color: var(--btn-bg);
+  }
+ /*  */
+  .success-data{
+	border: 2px solid var(--success-color);
+  }
+  .error-data{
+	border: 2px solid var(--error-color);
+  }
+ 
+ 
+  .form-control label{
+   color: var(--label-color);
+   margin-top: 1rem;
+  }
+  .cutsom {
+	position: relative;
+  }
+  .cutsom span{
+	position: absolute;
+	right: 0;
+	top: 50%;
+	display: block;
+	cursor: pointer;
+	transition: var(--tranitions);
+	transform: translateY(-50%);
+	padding: 1rem;
+	color: var(--main-color);
+	font-weight: bold;
+	z-index: 10;
+	
+  }
+  .cutsom span:hover{
+	opacity: 0.8;  
+  }
+  .form-control .sms{
+	color: var(--error-color);
+	padding: 0.5rem 0;
+	line-height: 1.2;
+	width: 100%;
+	display: block;
+   letter-spacing: 0.5px;
+  }
+  input[type="submit"]{
+  background-color: var(--main-color);
+  color: var(--white-color);
+  padding: 1rem;
+  font-size: 1.1rem;
+  border-radius: 3px;
+  cursor: pointer;
+  margin: 1rem auto;
+ display: block;
+ transition: var(--tranitions);
+ box-shadow: 0 2px 2px rgba(17, 5, 5, 0.425);
+  }
+  input[type="submit"]:hover{
+	opacity: 0.9;
+	box-shadow:none;
+ }
+  
